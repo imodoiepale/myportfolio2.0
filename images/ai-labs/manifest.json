@@ -1,0 +1,92 @@
+[
+  {
+    "name": "OpenAI",
+    "file": "openai.svg",
+    "url": "https://openai.com",
+    "source": "simple-icons"
+  },
+  {
+    "name": "Anthropic",
+    "file": "anthropic.svg",
+    "url": "https://www.anthropic.com",
+    "source": "simple-icons"
+  },
+  {
+    "name": "Google DeepMind / Gemini",
+    "file": "google-deepmind.svg",
+    "url": "https://deepmind.google",
+    "source": "simple-icons:googlegemini"
+  },
+  {
+    "name": "Meta",
+    "file": "meta.svg",
+    "url": "https://ai.meta.com",
+    "source": "simple-icons"
+  },
+  {
+    "name": "Microsoft",
+    "file": "microsoft.svg",
+    "url": "https://www.microsoft.com",
+    "source": "custom-four-square"
+  },
+  {
+    "name": "NVIDIA",
+    "file": "nvidia.svg",
+    "url": "https://www.nvidia.com",
+    "source": "simple-icons"
+  },
+  {
+    "name": "xAI",
+    "file": "xai.svg",
+    "url": "https://x.ai",
+    "source": "custom"
+  },
+  {
+    "name": "Mistral",
+    "file": "mistral.svg",
+    "url": "https://mistral.ai",
+    "source": "simple-icons:mistralai"
+  },
+  {
+    "name": "Cohere",
+    "file": "cohere.svg",
+    "url": "https://cohere.com",
+    "source": "custom"
+  },
+  {
+    "name": "Hugging Face",
+    "file": "hugging-face.svg",
+    "url": "https://huggingface.co",
+    "source": "simple-icons"
+  },
+  {
+    "name": "Perplexity",
+    "file": "perplexity.svg",
+    "url": "https://www.perplexity.ai",
+    "source": "simple-icons"
+  },
+  {
+    "name": "DeepSeek",
+    "file": "deepseek.svg",
+    "url": "https://www.deepseek.com",
+    "source": "simple-icons"
+  },
+  {
+    "name": "ElevenLabs",
+    "file": "elevenlabs.svg",
+    "url": "https://elevenlabs.io",
+    "source": "simple-icons"
+  },
+  {
+    "name": "Stability AI",
+    "file": "stability-ai.svg",
+    "url": "https://stability.ai",
+    "source": "custom"
+  },
+  {
+    "name": "Amazon AWS",
+    "file": "amazon-aws.svg",
+    "url": "https://aws.amazon.com",
+    "source": "simple-icons:amazonwebservices"
+  }
+]
