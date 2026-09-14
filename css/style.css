@@ -168,10 +168,11 @@ main,
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 40;
+  z-index: 70;
   height: var(--header);
   display: flex;
   align-items: center;
+  overflow: visible;
   transition: background 0.25s ease, border-color 0.25s ease, backdrop-filter 0.25s ease;
 }
 
@@ -187,7 +188,7 @@ main,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 16px;
 }
 
 .logo {
@@ -204,12 +205,14 @@ main,
 .nav-panel {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 18px;
+  flex-shrink: 0;
 }
 
 .nav-panel a {
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 0.84rem;
+  white-space: nowrap;
 }
 
 .nav-panel a:hover,
@@ -227,6 +230,8 @@ main,
   padding: 8px 14px;
   border-radius: 999px;
   font-size: 0.86rem;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .nav-toggle {
@@ -296,13 +301,12 @@ main,
   grid-template-columns: 1.05fr 0.95fr;
   gap: 36px;
   align-items: center;
-  min-height: calc(100vh - var(--header) - 72px);
 }
 
 .hero h1 {
-  font-size: clamp(2.4rem, 5.4vw, 4.6rem);
+  font-size: clamp(2.2rem, 4.6vw, 3.85rem);
   margin: 18px 0 16px;
-  max-width: 13ch;
+  max-width: 14ch;
 }
 
 .hero-name {
@@ -864,12 +868,6 @@ main,
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.reveal.is-visible {
   opacity: 1;
   transform: none;
 }
@@ -920,7 +918,8 @@ main,
   .nav-panel {
     position: fixed;
     inset: var(--header) 0 0 0;
-    background: rgba(7, 11, 20, 0.96);
+    z-index: 80;
+    background: #070b14;
     flex-direction: column;
     align-items: stretch;
     padding: 28px 24px;

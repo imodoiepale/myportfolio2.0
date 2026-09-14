@@ -2,6 +2,14 @@
 
 Table-based HTML with hosted images. Gmail strips `<style>` blocks, so every rule is inline. After Vercel deploys this repo, the images live at `https://imodoiepale.vercel.app/signature/assets/`.
 
+The signature is a **light** Gmail footer (white canvas, navy/blue type). Layout: globe panel on the left; name, roles, contact rows, social icons, and footer line on the right.
+
+## Email
+
+The live signature uses **ijepale@gmail.com** for both the visible address and `mailto:`. That is the personal Gmail account.
+
+`james@nsait.co.ke` appeared on an earlier artwork mockup. Do not put it in `index.html` or `preview.html`. If a work signature is needed later, swap only the visible text and `mailto` in those two files.
+
 ## Install
 
 1. Confirm the globe panel loads: [https://imodoiepale.vercel.app/signature/assets/globe-panel.jpg](https://imodoiepale.vercel.app/signature/assets/globe-panel.jpg). If that 404s, wait for the deploy or check Vercel.
@@ -27,13 +35,14 @@ The Gmail iOS/Android apps cannot paste a rich signature. Do this on desktop. If
 
 ## Edit later
 
-Change a URL or swap an icon in `index.html`, then regenerate `preview.html` by replacing `https://imodoiepale.vercel.app/signature/assets/` with `assets/`. Commit and push so Vercel updates the hosted files.
+Change a URL or swap an icon in `index.html`, then update `preview.html` by replacing `https://imodoiepale.vercel.app/signature/assets/` with `assets/`. Commit and push so Vercel updates the hosted files.
 
 ## Assets
 
 | File | Use |
 | --- | --- |
-| `assets/globe-panel.jpg` | Left panel (~210×280) |
-| `assets/globe-panel.png` | Same art, PNG original |
-| `assets/signature-name.png` | Handwritten name (Allura, transparent) |
-| `assets/icons/*.png` | 128px circular icons, shown at 22px / 32px |
+| `assets/globe-panel.jpg` | Left panel (Africa globe, used in the HTML) |
+| `assets/globe-panel.png` | Same crop, PNG original |
+| `assets/signature-name.png` | Handwritten name with underline (transparent) |
+| `assets/icons/*.png` | 128px circular icons, shown at 18px (contact) / 30px (social) |
+| `assets/icon-linkedin.png` | LinkedIn circle (#0A66C2, white “in”) |
