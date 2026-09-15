@@ -129,6 +129,7 @@ function setupNav() {
       const open = !panel.classList.contains("is-open");
       panel.classList.toggle("is-open", open);
       toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
       document.body.classList.toggle("nav-open", open);
     });
     panel.querySelectorAll("a").forEach((link) => {

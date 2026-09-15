@@ -45,14 +45,23 @@
   </header>
 
   <main id="main">
-    <section class="hero wrap" id="top">
-      <div class="hero-grid">
+    <section class="hero" id="top">
+      <div class="hero-atmosphere" aria-hidden="true">
+        <img src="images/hero-globe.png" width="1600" height="900" alt="">
+      </div>
+      <div class="hero-layout wrap">
         <div>
-          <p class="eyebrow">Nairobi, Kenya · Building for a brighter world</p>
-          <h1>BUILDING INTELLIGENT SYSTEMS FOR A BRIGHTER WORLD.</h1>
+          <p class="eyebrow">For a brighter world</p>
           <p class="hero-name">James Imodoi Epale</p>
           <p class="hero-roles">AI Solutions Architect · Product Builder · Business Development · Software Engineer</p>
-          <p class="hero-copy">From voice-first fintech and enterprise automation to government intelligence, AI agents and digital infrastructure, I turn ambitious ideas into working products.</p>
+          <h1>BUILDING INTELLIGENT SYSTEMS FOR A BRIGHTER WORLD.</h1>
+          <p class="hero-lede">From voice-first fintech and enterprise automation to government intelligence, AI agents and digital infrastructure, I turn ambitious ideas into working products.</p>
+          <p class="hero-meta">
+            <span>Nairobi</span>
+            <a href="mailto:ijepale@gmail.com">ijepale@gmail.com</a>
+            <a href="tel:+254743854888">+254 743 854 888</a>
+          </p>
+          <p class="hero-affiliation">NSAIT Co-Founder / CTO · portfolio.nsait.co.ke</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#work">View Selected Work</a>
             <a class="btn btn-ghost" href="#contact">Build With Me</a>
@@ -60,15 +69,24 @@
           </div>
         </div>
         <div class="hero-visual">
-          <img src="images/hero-globe.png" width="1600" height="900" alt="Earth at night with Africa centered and orbital network arcs">
+          <div class="globe-glow" aria-hidden="true"></div>
+          <figure class="globe-orb">
+            <img src="images/hero-globe.png" width="1600" height="900" alt="Earth at night with Africa centered and orbital network arcs" fetchpriority="high">
+          </figure>
+          <p class="globe-words" aria-hidden="true">
+            <span>Connect</span>
+            <span>Create</span>
+            <span>Grow</span>
+            <span>For a brighter world</span>
+          </p>
         </div>
       </div>
     </section>
 
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span>AI AGENTS — FINTECH — AUTOMATION — VOICE AI — ENTERPRISE SYSTEMS — DIGITAL INFRASTRUCTURE — AI AGENTS — FINTECH — AUTOMATION — VOICE AI — ENTERPRISE SYSTEMS — DIGITAL INFRASTRUCTURE</span>
-        <span>AI AGENTS — FINTECH — AUTOMATION — VOICE AI — ENTERPRISE SYSTEMS — DIGITAL INFRASTRUCTURE — AI AGENTS — FINTECH — AUTOMATION — VOICE AI — ENTERPRISE SYSTEMS — DIGITAL INFRASTRUCTURE</span>
+        <span>FOR A BRIGHTER WORLD — AI AGENTS — FINTECH — AUTOMATION — VOICE AI — ENTERPRISE SYSTEMS — DIGITAL INFRASTRUCTURE — FOR A BRIGHTER WORLD — AI AGENTS — FINTECH — AUTOMATION — VOICE AI — ENTERPRISE SYSTEMS — DIGITAL INFRASTRUCTURE</span>
+        <span>FOR A BRIGHTER WORLD — AI AGENTS — FINTECH — AUTOMATION — VOICE AI — ENTERPRISE SYSTEMS — DIGITAL INFRASTRUCTURE — FOR A BRIGHTER WORLD — AI AGENTS — FINTECH — AUTOMATION — VOICE AI — ENTERPRISE SYSTEMS — DIGITAL INFRASTRUCTURE</span>
       </div>
     </div>
 
@@ -93,8 +111,11 @@
       <div class="work-grid">
         <article class="work-card reveal">
           <div class="work-media">
-            <img src="images/nsait/ongea-pesa/hero.jpg" width="1400" height="788" alt="Voice-first payments interface concept for Ongea Pesa">
-            <img class="work-badge" src="images/brands/ongea-pesa-horizontal-light.png" alt="">
+            <picture>
+              <source srcset="images/nsait/ongea-pesa/hero.webp" type="image/webp">
+              <img class="pos-ongea" src="images/nsait/ongea-pesa/hero.jpg" width="1400" height="788" alt="Voice-first payments interface for Ongea Pesa">
+            </picture>
+            <img class="work-badge badge-screen" src="images/brands/ongea-pesa-horizontal-light.png" alt="">
           </div>
           <div class="work-body">
             <p class="tags">AI · Fintech · Voice · Accessibility</p>
@@ -107,8 +128,11 @@
         </article>
         <article class="work-card reveal">
           <div class="work-media">
-            <img src="images/nsait/meridian/hero.jpg" width="1400" height="788" alt="Investors arriving in a city with global route arcs for Meridian">
-            <img class="work-badge" src="images/brands/meridian-logo-white.png" alt="">
+            <picture>
+              <source srcset="images/nsait/meridian/hero.webp" type="image/webp">
+              <img class="pos-meridian" src="images/nsait/meridian/hero.jpg" width="1400" height="788" alt="Investors arriving in a city with global route arcs for Meridian">
+            </picture>
+            <img class="work-badge badge-screen" src="images/brands/meridian-logo-white.png" alt="">
           </div>
           <div class="work-body">
             <p class="tags">Global investment · Agentic automation</p>
@@ -121,7 +145,10 @@
         </article>
         <article class="work-card reveal">
           <div class="work-media">
-            <img src="images/nsait/kra-tools/hero.jpg" width="1400" height="788" alt="Document processing dashboard with Kenyan tax compliance flows">
+            <picture>
+              <source srcset="images/nsait/kra-tools/hero.webp" type="image/webp">
+              <img class="pos-kra" src="images/nsait/kra-tools/hero.jpg" width="1400" height="788" alt="Document processing dashboard with Kenyan tax compliance flows">
+            </picture>
           </div>
           <div class="work-body">
             <p class="tags">Enterprise SaaS · Tax compliance</p>
@@ -134,7 +161,10 @@
         </article>
         <article class="work-card reveal">
           <div class="work-media">
-            <img src="images/nsait/nunge-returns/hero.jpg" width="1400" height="788" alt="Person filing Kenyan tax returns from a phone in seconds">
+            <picture>
+              <source srcset="images/nsait/nunge-returns/hero.webp" type="image/webp">
+              <img class="pos-nunge" src="images/nsait/nunge-returns/hero.jpg" width="1400" height="788" alt="Person filing Kenyan tax returns from a phone in seconds">
+            </picture>
           </div>
           <div class="work-body">
             <p class="tags">Fintech · Tax automation</p>
@@ -148,7 +178,10 @@
         </article>
         <article class="work-card reveal">
           <div class="work-media">
-            <img src="images/nsait/swara/hero.jpg" width="1400" height="788" alt="Conservation voice assistant concept at Ol Pejeta">
+            <picture>
+              <source srcset="images/nsait/swara/hero.webp" type="image/webp">
+              <img class="pos-swara" src="images/nsait/swara/hero.jpg" width="1400" height="788" alt="Conservation voice assistant concept at Ol Pejeta">
+            </picture>
           </div>
           <div class="work-body">
             <p class="tags">Conservation · Voice AI</p>
@@ -161,8 +194,11 @@
         </article>
         <article class="work-card reveal">
           <div class="work-media">
-            <img src="images/nsait/smart-school-sentinel/hero.jpg" width="1400" height="788" alt="Campus safety map with live location signals">
-            <img class="work-badge" src="images/brands/smart-school-sentinel-logo.jpg" alt="">
+            <picture>
+              <source srcset="images/nsait/smart-school-sentinel/hero.webp" type="image/webp">
+              <img class="pos-sentinel" src="images/nsait/smart-school-sentinel/hero.jpg" width="1400" height="788" alt="Campus safety map with live location signals">
+            </picture>
+            <img class="work-badge badge-panel" src="images/brands/smart-school-sentinel-logo.jpg" alt="">
           </div>
           <div class="work-body">
             <p class="tags">EdTech · AI safety</p>
@@ -178,39 +214,39 @@
     </section>
 
     <section class="labs wrap reveal" id="labs">
-      <p class="eyebrow" style="margin-bottom:14px">Frontier AI labs I build with</p>
+      <p class="eyebrow">Frontier AI labs I build with</p>
       <div class="labs-frame">
         <div class="labs-track">
-          <a class="lab" href="https://openai.com" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/openai.svg" alt=""><span>OpenAI</span></a>
-          <a class="lab" href="https://www.anthropic.com" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/anthropic.svg" alt=""><span>Anthropic</span></a>
-          <a class="lab" href="https://deepmind.google" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/google-deepmind.svg" alt=""><span>Google DeepMind</span></a>
-          <a class="lab" href="https://ai.meta.com" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/meta.svg" alt=""><span>Meta</span></a>
-          <a class="lab" href="https://www.microsoft.com" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/microsoft.svg" alt=""><span>Microsoft</span></a>
-          <a class="lab" href="https://www.nvidia.com" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/nvidia.svg" alt=""><span>NVIDIA</span></a>
-          <a class="lab" href="https://x.ai" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/xai.svg" alt=""><span>xAI</span></a>
-          <a class="lab" href="https://mistral.ai" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/mistral.svg" alt=""><span>Mistral</span></a>
-          <a class="lab" href="https://cohere.com" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/cohere.svg" alt=""><span>Cohere</span></a>
-          <a class="lab" href="https://huggingface.co" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/hugging-face.svg" alt=""><span>Hugging Face</span></a>
-          <a class="lab" href="https://www.perplexity.ai" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/perplexity.svg" alt=""><span>Perplexity</span></a>
-          <a class="lab" href="https://www.deepseek.com" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/deepseek.svg" alt=""><span>DeepSeek</span></a>
-          <a class="lab" href="https://elevenlabs.io" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/elevenlabs.svg" alt=""><span>ElevenLabs</span></a>
-          <a class="lab" href="https://stability.ai" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/stability-ai.svg" alt=""><span>Stability AI</span></a>
-          <a class="lab" href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/amazon-aws.svg" alt=""><span>Amazon AWS</span></a>
-          <a class="lab" href="https://openai.com" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/openai.svg" alt=""><span>OpenAI</span></a>
-          <a class="lab" href="https://www.anthropic.com" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/anthropic.svg" alt=""><span>Anthropic</span></a>
-          <a class="lab" href="https://deepmind.google" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/google-deepmind.svg" alt=""><span>Google DeepMind</span></a>
-          <a class="lab" href="https://ai.meta.com" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/meta.svg" alt=""><span>Meta</span></a>
-          <a class="lab" href="https://www.microsoft.com" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/microsoft.svg" alt=""><span>Microsoft</span></a>
-          <a class="lab" href="https://www.nvidia.com" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/nvidia.svg" alt=""><span>NVIDIA</span></a>
-          <a class="lab" href="https://x.ai" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/xai.svg" alt=""><span>xAI</span></a>
-          <a class="lab" href="https://mistral.ai" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/mistral.svg" alt=""><span>Mistral</span></a>
-          <a class="lab" href="https://cohere.com" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/cohere.svg" alt=""><span>Cohere</span></a>
-          <a class="lab" href="https://huggingface.co" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/hugging-face.svg" alt=""><span>Hugging Face</span></a>
-          <a class="lab" href="https://www.perplexity.ai" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/perplexity.svg" alt=""><span>Perplexity</span></a>
-          <a class="lab" href="https://www.deepseek.com" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/deepseek.svg" alt=""><span>DeepSeek</span></a>
-          <a class="lab" href="https://elevenlabs.io" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/elevenlabs.svg" alt=""><span>ElevenLabs</span></a>
-          <a class="lab" href="https://stability.ai" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/stability-ai.svg" alt=""><span>Stability AI</span></a>
-          <a class="lab" href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer"><img src="images/ai-labs/amazon-aws.svg" alt=""><span>Amazon AWS</span></a>
+          <a class="lab" href="https://openai.com" target="_blank" rel="noopener noreferrer" aria-label="OpenAI"><img src="images/ai-labs/openai.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://www.anthropic.com" target="_blank" rel="noopener noreferrer" aria-label="Anthropic"><img src="images/ai-labs/anthropic.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://deepmind.google" target="_blank" rel="noopener noreferrer" aria-label="Google DeepMind"><img src="images/ai-labs/google-deepmind.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://ai.meta.com" target="_blank" rel="noopener noreferrer" aria-label="Meta"><img src="images/ai-labs/meta.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://www.microsoft.com" target="_blank" rel="noopener noreferrer" aria-label="Microsoft"><img src="images/ai-labs/microsoft.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://www.nvidia.com" target="_blank" rel="noopener noreferrer" aria-label="NVIDIA"><img src="images/ai-labs/nvidia.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://x.ai" target="_blank" rel="noopener noreferrer" aria-label="xAI"><img src="images/ai-labs/xai.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://mistral.ai" target="_blank" rel="noopener noreferrer" aria-label="Mistral"><img src="images/ai-labs/mistral.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://cohere.com" target="_blank" rel="noopener noreferrer" aria-label="Cohere"><img src="images/ai-labs/cohere.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://huggingface.co" target="_blank" rel="noopener noreferrer" aria-label="Hugging Face"><img src="images/ai-labs/hugging-face.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://www.perplexity.ai" target="_blank" rel="noopener noreferrer" aria-label="Perplexity"><img src="images/ai-labs/perplexity.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://www.deepseek.com" target="_blank" rel="noopener noreferrer" aria-label="DeepSeek"><img src="images/ai-labs/deepseek.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://elevenlabs.io" target="_blank" rel="noopener noreferrer" aria-label="ElevenLabs"><img src="images/ai-labs/elevenlabs.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://stability.ai" target="_blank" rel="noopener noreferrer" aria-label="Stability AI"><img src="images/ai-labs/stability-ai.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer" aria-label="Amazon AWS"><img src="images/ai-labs/amazon-aws.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://openai.com" target="_blank" rel="noopener noreferrer" aria-label="OpenAI"><img src="images/ai-labs/openai.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://www.anthropic.com" target="_blank" rel="noopener noreferrer" aria-label="Anthropic"><img src="images/ai-labs/anthropic.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://deepmind.google" target="_blank" rel="noopener noreferrer" aria-label="Google DeepMind"><img src="images/ai-labs/google-deepmind.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://ai.meta.com" target="_blank" rel="noopener noreferrer" aria-label="Meta"><img src="images/ai-labs/meta.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://www.microsoft.com" target="_blank" rel="noopener noreferrer" aria-label="Microsoft"><img src="images/ai-labs/microsoft.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://www.nvidia.com" target="_blank" rel="noopener noreferrer" aria-label="NVIDIA"><img src="images/ai-labs/nvidia.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://x.ai" target="_blank" rel="noopener noreferrer" aria-label="xAI"><img src="images/ai-labs/xai.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://mistral.ai" target="_blank" rel="noopener noreferrer" aria-label="Mistral"><img src="images/ai-labs/mistral.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://cohere.com" target="_blank" rel="noopener noreferrer" aria-label="Cohere"><img src="images/ai-labs/cohere.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://huggingface.co" target="_blank" rel="noopener noreferrer" aria-label="Hugging Face"><img src="images/ai-labs/hugging-face.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://www.perplexity.ai" target="_blank" rel="noopener noreferrer" aria-label="Perplexity"><img src="images/ai-labs/perplexity.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://www.deepseek.com" target="_blank" rel="noopener noreferrer" aria-label="DeepSeek"><img src="images/ai-labs/deepseek.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://elevenlabs.io" target="_blank" rel="noopener noreferrer" aria-label="ElevenLabs"><img src="images/ai-labs/elevenlabs.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://stability.ai" target="_blank" rel="noopener noreferrer" aria-label="Stability AI"><img src="images/ai-labs/stability-ai.svg" alt="" width="32" height="32"></a>
+          <a class="lab" href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer" aria-label="Amazon AWS"><img src="images/ai-labs/amazon-aws.svg" alt="" width="32" height="32"></a>
         </div>
       </div>
     </section>
@@ -237,31 +273,31 @@
       </div>
       <div class="client-grid">
         <a class="client-card reveal" href="https://grainhub-ltd.web.app/" target="_blank" rel="noopener noreferrer">
-          <img src="images/projects/grainhub.jpg" alt="Grainhub Ltd website">
+          <img src="images/projects/grainhub.jpg" width="1200" height="675" alt="Grainhub Ltd website" loading="lazy">
           <span>Grainhub Ltd</span>
         </a>
         <a class="client-card reveal" href="https://meeplan.vercel.app" target="_blank" rel="noopener noreferrer">
-          <img src="images/projects/meeplan.jpg" alt="Meeplan Ltd website">
+          <img src="images/projects/meeplan.jpg" width="1200" height="675" alt="Meeplan Ltd website" loading="lazy">
           <span>Meeplan Ltd</span>
         </a>
         <a class="client-card reveal" href="https://tahillahpreparatory.vercel.app/" target="_blank" rel="noopener noreferrer">
-          <img src="images/projects/tahilah.jpg" alt="Tahillah Preparatory School website">
+          <img src="images/projects/tahilah.jpg" width="1200" height="675" alt="Tahillah Preparatory School website" loading="lazy">
           <span>Tahillah Preparatory</span>
         </a>
         <a class="client-card reveal" href="https://betaownyourlyf.web.app/" target="_blank" rel="noopener noreferrer">
-          <img src="images/projects/beta.jpg" alt="Beta Own Your Life website">
+          <img src="images/projects/beta.jpg" width="1200" height="675" alt="Beta Own Your Life website" loading="lazy">
           <span>Beta Own Your Life</span>
         </a>
         <a class="client-card reveal" href="https://arnold-njogu.web.app/" target="_blank" rel="noopener noreferrer">
-          <img src="images/projects/njogu.jpg" alt="Arnold Njogu portfolio">
+          <img src="images/projects/njogu.jpg" width="1200" height="675" alt="Arnold Njogu portfolio" loading="lazy">
           <span>Arnold Njogu</span>
         </a>
         <a class="client-card reveal" href="https://mikeepale.web.app/" target="_blank" rel="noopener noreferrer">
-          <img src="images/projects/mike.jpg" alt="Mike Epale portfolio">
+          <img src="images/projects/mike.jpg" width="1200" height="675" alt="Mike Epale portfolio" loading="lazy">
           <span>Mike Epale</span>
         </a>
         <a class="client-card reveal" href="https://mpesa-stk-intergration.vercel.app/" target="_blank" rel="noopener noreferrer">
-          <img src="images/projects/stk.jpg" alt="M-Pesa STK Push integration">
+          <img src="images/projects/stk.jpg" width="1200" height="675" alt="M-Pesa STK Push integration" loading="lazy">
           <span>M-Pesa STK Push</span>
         </a>
       </div>
@@ -297,7 +333,7 @@
     <section class="section wrap" id="nsait">
       <div class="nsait-grid">
         <article class="nsait-card reveal">
-          <img class="nsait-logo" src="images/brands/nsait-logo-clean.png" alt="NSAIT">
+          <img class="nsait-logo" src="images/brands/nsait-logo-clean.png" alt="NSAIT" width="160" height="40">
           <p class="eyebrow">Nairobi Space of Artificial Intelligence Tools</p>
           <blockquote>A product and innovation studio building practical AI infrastructure and intelligent systems for African businesses, institutions and consumers.</blockquote>
           <p class="role">Co-Founder / CTO</p>
@@ -322,7 +358,7 @@
     <section class="section wrap" id="about">
       <div class="about-grid">
         <div class="portrait reveal">
-          <img src="images/james.jpg" width="800" height="800" alt="James Imodoi Epale">
+          <img src="images/james.jpg" width="800" height="1000" alt="James Imodoi Epale">
         </div>
         <div class="about-copy reveal">
           <p class="eyebrow">About</p>
