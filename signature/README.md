@@ -1,24 +1,27 @@
 # Gmail signature
 
-Table-based HTML with hosted images. Gmail strips `<style>` blocks, so every rule is inline. After Vercel deploys this repo, the images live at `https://imodoiepale.vercel.app/signature/assets/`.
+Table-based HTML with hosted images. Gmail strips `<style>` blocks, so every rule in the table is inline. After Vercel deploys this repo, images live at `https://imodoiepale.vercel.app/signature/assets/`.
 
-The signature is a **light** Gmail footer (white canvas, navy/blue type). Layout: globe panel on the left; name, roles, contact rows, social icons, and footer line on the right.
+The **install steps live on the page** you copy from: [https://imodoiepale.vercel.app/signature/](https://imodoiepale.vercel.app/signature/)
+
+`preview.html` is a local look at the table. Do not paste it into Gmail. Relative image paths will break.
 
 ## Email
 
-The live signature uses **ijepale@gmail.com** for both the visible address and `mailto:`. That is the personal Gmail account.
+The live signature uses **ijepale@gmail.com** for the visible address and `mailto:`.
 
-`james@nsait.co.ke` appeared on an earlier artwork mockup. Do not put it in `index.html` or `preview.html`. If a work signature is needed later, swap only the visible text and `mailto` in those two files.
+`james@nsait.co.ke` was on an earlier mockup. Do not put it in `index.html` or `preview.html`.
 
 ## Install
 
-1. Confirm the globe panel loads: [https://imodoiepale.vercel.app/signature/assets/globe-panel.jpg](https://imodoiepale.vercel.app/signature/assets/globe-panel.jpg). If that 404s, wait for the deploy or check Vercel.
-2. Open [https://imodoiepale.vercel.app/signature/](https://imodoiepale.vercel.app/signature/) in Chrome (desktop). Locally you can open `preview.html` instead; that file uses relative image paths.
-3. Click inside the page, then Ctrl+A and Ctrl+C. Copy the rendered table, not the HTML source.
-4. In Gmail: Settings gear → See all settings → General → Signature → Create new. Name it `James – Professional` and paste.
-5. Under Signature defaults, set it for new emails and for replies/forwards.
-6. Scroll to the bottom and click Save Changes.
-7. Send a test to yourself and click every link:
+1. Confirm the globe loads: [https://imodoiepale.vercel.app/signature/assets/globe-panel.jpg](https://imodoiepale.vercel.app/signature/assets/globe-panel.jpg). If that 404s, wait for Vercel.
+2. Open [https://imodoiepale.vercel.app/signature/](https://imodoiepale.vercel.app/signature/) in **Chrome on a computer**.
+3. Click **Copy signature**. Do not Ctrl+A the whole page. That copies the instructions and page padding, which shows up as empty space in the email.
+4. Gmail → gear → See all settings → General → Signature. Create new (`James – Professional`) or replace the existing one. Paste.
+5. Signature defaults: new emails and replies/forwards.
+6. Scroll to the **bottom** of Settings and click Save Changes.
+7. Compose a new email. If Gmail inserted a blank line above the globe, click it and press Backspace.
+8. Send a test to yourself and click every link:
 
    - https://imodoiepale.vercel.app
    - mailto:ijepale@gmail.com
@@ -31,18 +34,17 @@ The live signature uses **ijepale@gmail.com** for both the visible address and `
    - https://tiktok.com/@epalle
    - https://www.linkedin.com/in/jamesepale/
 
-The Gmail iOS/Android apps cannot paste a rich signature. Do this on desktop. If images show as broken, the site has not finished deploying.
+The Gmail iOS/Android apps cannot paste a rich signature. Set it on desktop. If images are broken, the site has not finished deploying, or you copied from a local file.
 
 ## Edit later
 
-Change a URL or swap an icon in `index.html`, then update `preview.html` by replacing `https://imodoiepale.vercel.app/signature/assets/` with `assets/`. Commit and push so Vercel updates the hosted files.
+Change a URL or swap an icon in `index.html`, then update `preview.html` by replacing `https://imodoiepale.vercel.app/signature/assets/` with `assets/`. Commit and push so Vercel updates the hosted files. Then copy the signature into Gmail again.
 
 ## Assets
 
 | File | Use |
 | --- | --- |
-| `assets/globe-panel.jpg` | Left panel (Africa globe, used in the HTML) |
+| `assets/globe-panel.jpg` | Left panel (Africa globe), shown at 248×262 |
 | `assets/globe-panel.png` | Same crop, PNG original |
-| `assets/signature-name.png` | Handwritten name with underline (transparent) |
-| `assets/icons/*.png` | 128px circular icons, shown at 18px (contact) / 30px (social) |
-| `assets/icon-linkedin.png` | LinkedIn circle (#0A66C2, white “in”) |
+| `assets/signature-name.png` | Handwritten name with underline (transparent, padded so Gmail does not clip the J) |
+| `assets/icons/*.png` | Circular icons, shown at 20px (contact) / 30px (social) |

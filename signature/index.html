@@ -4,29 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>James Imodoi Epale — Gmail signature</title>
+  <style>
+    body { margin: 0; padding: 28px 24px 48px; background: #f4f6f9; color: #1b2a44; font-family: Arial, Helvetica, sans-serif; }
+    .page { max-width: 820px; margin: 0 auto; }
+    h1 { margin: 0 0 8px; font-size: 22px; color: #06245c; }
+    .lead { margin: 0 0 20px; font-size: 14px; line-height: 1.5; color: #3d4f6a; }
+    .steps { margin: 0 0 18px; padding: 16px 18px 8px; background: #fff; border: 1px solid #d5deea; border-radius: 10px; }
+    .steps h2 { margin: 0 0 10px; font-size: 15px; color: #06245c; }
+    .steps ol { margin: 0 0 12px; padding-left: 20px; }
+    .steps li { margin: 0 0 8px; font-size: 13px; line-height: 1.45; }
+    .steps a { color: #0877e8; }
+    .note { margin: 0 0 12px; font-size: 12px; line-height: 1.45; color: #5b7394; }
+    .toolbar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin: 0 0 12px; }
+    button { appearance: none; border: 0; background: #0877e8; color: #fff; font: 600 13px Arial, Helvetica, sans-serif; padding: 10px 16px; border-radius: 8px; cursor: pointer; }
+    button:hover { background: #0666c9; }
+    #copy-status { font-size: 13px; color: #0b7a3b; min-height: 18px; }
+    .copy-box { background: #fff; border: 2px dashed #9aa9bd; border-radius: 12px; padding: 16px; overflow-x: auto; }
+    .copy-label { margin: 0 0 10px; font-size: 11px; letter-spacing: 1.4px; color: #7a8ba3; text-transform: uppercase; }
+  </style>
 </head>
-<!-- Gmail signature source. Copy the rendered table (Ctrl+A, Ctrl+C) after deploy.
-     Image URLs are absolute on https://imodoiepale.vercel.app so they resolve in Gmail.
-     Visible + mailto email: ijepale@gmail.com (personal). -->
-<body style="margin:0;padding:24px;background:#ffffff;font-family:Arial,Helvetica,sans-serif;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="820" style="width:820px;max-width:820px;border-collapse:collapse;background:#ffffff;">
+<body>
+  <div class="page">
+    <h1>Gmail signature</h1>
+    <p class="lead">Copy from this live page only. Gmail needs the hosted image URLs on <strong>imodoiepale.vercel.app</strong>. Copying the local file will show broken images in email.</p>
+
+    <div class="steps">
+      <h2>Install in Gmail (desktop Chrome)</h2>
+      <ol>
+        <li>Open <a href="https://imodoiepale.vercel.app/signature/">https://imodoiepale.vercel.app/signature/</a> after Vercel has finished deploying. Confirm the globe and name render.</li>
+        <li>Click <strong>Copy signature</strong> below. Do not use Ctrl+A on this whole page. That copies the instructions and extra padding, which is the empty space in the email.</li>
+        <li>Gmail → gear → <strong>See all settings</strong> → <strong>General</strong> → scroll to <strong>Signature</strong>.</li>
+        <li>Create new (name it <em>James – Professional</em>) or click the existing one. Click inside the signature editor, Ctrl+A, then Ctrl+V.</li>
+        <li>Under <strong>Signature defaults</strong>, set it for new emails and for replies/forwards.</li>
+        <li>Scroll to the bottom of Settings and click <strong>Save Changes</strong>. If you skip this, nothing sticks.</li>
+        <li>Compose a new mail. If Gmail left a blank line above the globe, click that line and press Backspace until the signature sits flush.</li>
+        <li>Send a test to yourself and tap every link (site, mail, phone, maps, socials).</li>
+      </ol>
+      <p class="note">The Gmail iOS/Android apps cannot paste a rich signature. Set it on desktop; the phone then uses that same signature. If images are broken, the deploy has not finished or you copied from a local file.</p>
+    </div>
+
+    <div class="toolbar">
+      <button type="button" id="copy-btn">Copy signature</button>
+      <span id="copy-status"></span>
+    </div>
+
+    <div class="copy-box" id="copy-box" title="Click then Ctrl+C if the button fails">
+      <p class="copy-label">This table is what Gmail should receive</p>
+
+  <table id="email-sig" role="presentation" cellpadding="0" cellspacing="0" border="0" width="760" style="width:760px;max-width:760px;border-collapse:collapse;background:#ffffff;">
     <tr>
-      <td valign="top" width="260" style="width:260px;padding:0 20px 0 0;">
-        <a href="https://imodoiepale.vercel.app" target="_blank" style="text-decoration:none;">
-          <img src="https://imodoiepale.vercel.app/signature/assets/globe-panel.jpg" width="252" height="214" alt="Ideas connect people. Create a brighter world. Technology knows no borders." style="display:block;border:0;width:252px;height:214px;border-radius:14px;outline:none;">
+      <td valign="top" width="248" style="width:248px;padding:0 16px 0 0;font-size:0;line-height:0;">
+        <a href="https://imodoiepale.vercel.app" target="_blank" style="text-decoration:none;border:0;font-size:0;line-height:0;">
+          <img src="https://imodoiepale.vercel.app/signature/assets/globe-panel.jpg" width="248" height="262" alt="Ideas connect people. Create a brighter world. Technology knows no borders." style="display:block;border:0;width:248px;height:262px;border-radius:14px;outline:none;">
         </a>
       </td>
-      <td valign="top" style="padding:2px 0 0 0;">
-        <a href="https://imodoiepale.vercel.app" target="_blank" style="text-decoration:none;">
-          <img src="https://imodoiepale.vercel.app/signature/assets/signature-name.png" width="430" height="83" alt="James Imodoi Epale" style="display:block;border:0;width:430px;height:auto;">
+      <td valign="top" style="padding:0;">
+        <a href="https://imodoiepale.vercel.app" target="_blank" style="text-decoration:none;border:0;font-size:0;line-height:0;">
+          <img src="https://imodoiepale.vercel.app/signature/assets/signature-name.png" width="440" height="110" alt="James Imodoi Epale" style="display:block;border:0;width:440px;height:110px;outline:none;">
         </a>
-        <p style="margin:4px 0 6px;padding:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;color:#263957;white-space:nowrap;">
+        <p style="margin:0 0 6px;padding:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;color:#263957;white-space:nowrap;">
           AI Solutions Architect <span style="color:#1685ff;padding:0 7px;">|</span> Business Development <span style="color:#1685ff;padding:0 7px;">|</span> Software Developer <span style="color:#1685ff;padding:0 7px;">|</span> Web Developer
         </p>
-        <p style="margin:0 0 14px;padding:0;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;letter-spacing:3.2px;color:#0877e8;font-weight:bold;">FOR A BRIGHTER WORLD</p>
+        <p style="margin:0 0 12px;padding:0;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;letter-spacing:3.2px;color:#0877e8;font-weight:bold;">FOR A BRIGHTER WORLD</p>
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;border-collapse:collapse;">
           <tr>
-            <td valign="top" width="260" style="width:260px;padding:0 18px 0 0;">
+            <td valign="top" width="250" style="width:250px;padding:0 16px 0 0;">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
                 <tr>
                   <td valign="middle" width="22" style="width:22px;padding:0 8px 5px 0;">
@@ -38,18 +80,18 @@
                 </tr>
                 <tr>
                   <td valign="middle" width="22" style="width:22px;padding:0 8px 5px 0;">
-                    <img src="https://imodoiepale.vercel.app/signature/assets/icons/email.png" width="20" height="20" alt="" style="display:block;border:0;width:20px;height:20px;">
-                  </td>
-                  <td valign="middle" style="padding:0 0 5px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;">
-                    <a href="mailto:ijepale@gmail.com" style="color:#263957;text-decoration:none;">ijepale@gmail.com</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td valign="middle" width="22" style="width:22px;padding:0 8px 5px 0;">
                     <img src="https://imodoiepale.vercel.app/signature/assets/icons/phone.png" width="20" height="20" alt="" style="display:block;border:0;width:20px;height:20px;">
                   </td>
                   <td valign="middle" style="padding:0 0 5px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;">
                     <a href="tel:+254743854888" style="color:#263957;text-decoration:none;">+254 743 854 888</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="middle" width="22" style="width:22px;padding:0 8px 5px 0;">
+                    <img src="https://imodoiepale.vercel.app/signature/assets/icons/email.png" width="20" height="20" alt="" style="display:block;border:0;width:20px;height:20px;">
+                  </td>
+                  <td valign="middle" style="padding:0 0 5px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;">
+                    <a href="mailto:ijepale@gmail.com" style="color:#263957;text-decoration:none;">ijepale@gmail.com</a>
                   </td>
                 </tr>
                 <tr>
@@ -90,7 +132,11 @@
             </td>
           </tr>
         </table>
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;border-collapse:collapse;margin-top:12px;">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="padding:14px 0 0 0;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;border-collapse:collapse;">
           <tr>
             <td valign="middle" width="28" style="width:28px;padding:0 10px 0 0;">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="28" style="width:28px;border-collapse:collapse;">
@@ -100,7 +146,7 @@
               </table>
             </td>
             <td valign="middle" style="padding:0 12px 0 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;color:#5b7394;font-style:italic;white-space:nowrap;">Let's build smart solutions together.</td>
-            <td valign="middle" style="padding:0;width:54%;">
+            <td valign="middle" style="padding:0;width:52%;">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;border-collapse:collapse;">
                 <tr>
                   <td valign="middle" style="border-bottom:1px solid #c5d0de;font-size:0;line-height:0;height:8px;">&nbsp;</td>
@@ -114,5 +160,45 @@
       </td>
     </tr>
   </table>
+
+    </div>
+  </div>
+  <script>
+    (function () {
+      var table = document.getElementById('email-sig');
+      var status = document.getElementById('copy-status');
+      function selectTable() {
+        var range = document.createRange();
+        range.selectNode(table);
+        var sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+        return sel;
+      }
+      document.getElementById('copy-btn').addEventListener('click', function () {
+        function fallback() {
+          selectTable();
+          var ok = false;
+          try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+          status.textContent = ok
+            ? 'Copied. Paste into Gmail → Settings → Signature.'
+            : 'Select the table below, then press Ctrl+C.';
+        }
+        var html = table.outerHTML;
+        if (navigator.clipboard && window.ClipboardItem) {
+          navigator.clipboard.write([
+            new ClipboardItem({
+              'text/html': new Blob([html], { type: 'text/html' }),
+              'text/plain': new Blob([table.innerText], { type: 'text/plain' })
+            })
+          ]).then(function () {
+            status.textContent = 'Copied. Paste into Gmail → Settings → Signature.';
+          }).catch(fallback);
+          return;
+        }
+        fallback();
+      });
+    })();
+  </script>
 </body>
 </html>
