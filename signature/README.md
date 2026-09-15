@@ -31,7 +31,7 @@ The live signature uses **ijepale@gmail.com** for the visible address and `mailt
    - https://github.com/imodoiepale
    - https://wa.me/254743854888
    - https://instagram.com/epale_dev
-   - https://tiktok.com/@epalle
+   - https://www.tiktok.com/@b0ijimi
    - https://www.linkedin.com/in/jamesepale/
 
 The Gmail iOS/Android apps cannot paste a rich signature. Set it on desktop. If images are broken, the site has not finished deploying, or you copied from a local file.
