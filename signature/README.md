@@ -1,6 +1,6 @@
 # Gmail signature
 
-Table-based HTML with hosted images. Gmail strips `<style>` blocks, so every rule in the table is inline. After Vercel deploys this repo, images live at `https://imodoiepale.vercel.app/signature/assets/`.
+Table-based HTML with hosted images. Gmail strips `<style>` blocks, so every rule in the table is inline. After Vercel deploys this repo, images live at `https://imodoiepale.vercel.app/signature/assets/`. The signature table is **540px** wide so it reads as an email footer, not a banner.
 
 The **install steps live on the page** you copy from: [https://imodoiepale.vercel.app/signature/](https://imodoiepale.vercel.app/signature/)
 
@@ -44,7 +44,7 @@ Change a URL or swap an icon in `index.html`, then update `preview.html` by repl
 
 | File | Use |
 | --- | --- |
-| `assets/globe-panel.jpg` | Left panel (Africa globe), shown at 248×262 |
+| `assets/globe-panel.jpg` | Left panel (Africa globe), shown at 150×158 |
 | `assets/globe-panel.png` | Same crop, PNG original |
-| `assets/signature-name.png` | Handwritten name with underline (transparent, padded so Gmail does not clip the J) |
-| `assets/icons/*.png` | Circular icons, shown at 20px (contact) / 30px (social) |
+| `assets/signature-name.png` | Handwritten name with underline (transparent, padded so Gmail does not clip the J), shown at 236×59 |
+| `assets/icons/*.png` | Circular icons, shown at 16px (contact) / 22px (social); source files stay 128px |
